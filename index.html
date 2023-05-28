@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator and tip</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <title>BILLSPLITTER</title>
+        <p>Podziel się rachunkie ze znajomymi</p>
+      </header>
+      <main>
+        <label for="bill">Kwota do zapłaty:</label>
+        <input type="number" class="bill" />
+        <label for="people">Ilość osób:</label>
+        <input type="number" class="people" />
+        <label for="tip">Napiwek</label>
+        <input type="text" class="tip" />
+      </main>
+      <footer>
+        <button>Oblicz</button>
+        <div class="result"></div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
