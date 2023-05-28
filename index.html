@@ -10,20 +10,31 @@
   <body>
     <div class="wrapper">
       <header>
-        <title>BILLSPLITTER</title>
+        <h1>BILLSPLITTER</h1>
         <p>Podziel się rachunkie ze znajomymi</p>
       </header>
       <main>
-        <label for="bill">Kwota do zapłaty:</label>
-        <input type="number" class="bill" />
-        <label for="people">Ilość osób:</label>
-        <input type="number" class="people" />
-        <label for="tip">Napiwek</label>
-        <input type="text" class="tip" />
+        <div class="main_inputs">
+          <label for="bill">Kwota do zapłaty:</label>
+          <input type="number" class="bill" id="bill" />
+          <label for="people">Ilość osób:</label>
+          <input type="number" class="people" id="people" />
+          <label for="tip">Napiwek</label>
+          <select name="tip" class="tip">
+            <option value="0" disabled selected>-- wybierz napiwek --</option>
+            <option value="0.05">5%</option>
+            <option value="0.10">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.20">20%</option>
+          </select>
+        </div>
       </main>
       <footer>
-        <button>Oblicz</button>
-        <div class="result"></div>
+        <div class="footer">
+          <button>Oblicz</button>
+          <p class="result"></p>
+          <p class="error"></p>
+        </div>
       </footer>
     </div>
     <script src="index.js"></script>
